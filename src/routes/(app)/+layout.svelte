@@ -10,7 +10,7 @@
 
 <div class="flex min-h-screen flex-col pt-16">
 
-	<header class="fixed background foreground top-0 w-full border-b p-4 shadow-sm">
+	<header class="fixed background foreground top-0 w-full p-4 border-b">
 		<nav class="container mx-auto flex items-center justify-between">
 			<!-- Navbar Content -->
 			<div>
@@ -40,8 +40,8 @@
 		<slot />
 	</div>
 
-	<footer class="p-4 mt-auto border-t shadow-md background foreground">
-		<div class="container mx-auto">
+	<footer class="container p-4 mt-auto border-t background foreground h-28">
+		<div class="mx-auto">
 			<!-- Footer content goes here -->
 			<p>&copy; 2024. All rights reserved.</p>
 		</div>
