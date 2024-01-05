@@ -4,6 +4,6 @@
 
 <Container>
     <div class="border-t py-4 h-28">
-        <p>&copy; 2024. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()}. All rights reserved.</p>
     </div>
 </Container>
