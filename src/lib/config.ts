@@ -1,0 +1,1 @@
+export const title = 'shadcn-svelte'

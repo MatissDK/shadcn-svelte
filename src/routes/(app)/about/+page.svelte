@@ -1,4 +1,8 @@
-About page!!
+
+<svelte:head>
+	<title>About</title>
+</svelte:head>
+
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quod! In laudantium labore aut, tempora obcaecati illo repudiandae nihil esse omnis iste sed facilis minima earum, consectetur molestias nulla neque laboriosam quam? Aliquid, rerum. Similique vitae aut, culpa iusto voluptas veritatis incidunt dolorem minima enim pariatur mollitia molestiae inventore non corrupti. Quisquam modi culpa laudantium nihil, saepe nam placeat ratione repudiandae deleniti aperiam hic minus sequi omnis assumenda perferendis quaerat. Similique atque amet aspernatur ab voluptas quia voluptate nobis nulla accusamus, laudantium placeat reprehenderit dolore distinctio ducimus nihil officiis blanditiis assumenda minus dolores nostrum natus! Libero perferendis perspiciatis amet temporibus.
 
 <div>

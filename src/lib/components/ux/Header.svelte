@@ -4,8 +4,7 @@
 	import { Button } from '$lib/components/ui/button';
 	import { Moon, Sun, Menu } from 'lucide-svelte';
 	import { toggleMode } from 'mode-watcher';
-
-	const APP_NAME = 'shadcn-svelte';
+    import * as config from '$lib/config';
 
 	let links = [
 		{
@@ -24,7 +23,7 @@
 		<div class="flex items-center justify-between">
 			<div class="flex items-center">
 				<a href="/">
-					<div class="text-xl font-semibold uppercase">{APP_NAME}</div>
+					<div class="text-xl font-semibold uppercase">{config.title}</div>
 				</a>
 				<nav class="hidden md:flex ml-10 space-x-2">
 					{#each links as link}

@@ -4,6 +4,7 @@
 	import { Label } from '$lib/components/ui/label';
 	import { cn } from '$lib/utils';
 	import { Loader2 } from 'lucide-svelte';
+	import * as config from '$lib/config';
 
 	let className: string | undefined | null = undefined;
 	export { className as class };
@@ -17,6 +18,10 @@
 		}, 3000);
 	}
 </script>
+
+<svelte:head>
+	<title>Sign In</title>
+</svelte:head>
 
 <div
 	class="container relative min-h-screen flex-col items-center justify-center grid lg:max-w-none lg:grid-cols-2 lg:px-0"
@@ -36,7 +41,7 @@
 					url(https://images.unsplash.com/photo-1590069261209-f8e9b8642343?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1376&q=80);"
 		/>
 		<div class="relative z-20 flex items-center text-lg font-medium">
-			<a href="/">shadcn-svelte</a>
+			<a href="/">{config.title}</a>
 		</div>
 		<div class="relative z-20 mt-auto">
 			<blockquote class="space-y-2">
