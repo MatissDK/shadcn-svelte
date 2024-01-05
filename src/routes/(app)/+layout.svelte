@@ -19,6 +19,9 @@
 
 	<div class="flex-1"></div>
 
-	<Footer/>
+	<div class="pt-5">
+		<Footer/>
+	</div>
+	
 
 </div>
