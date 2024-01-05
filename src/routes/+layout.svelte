@@ -1,8 +1,12 @@
-<script lang="ts">
+<!-- <script lang="ts">
+	import '../app.pcss';
 	import Header from '$lib/components/ux/Header.svelte';
 	import Footer from '$lib/components/ux/Footer.svelte';
 	import Container from "$lib/components/ux/Container.svelte";
+	import { ModeWatcher } from 'mode-watcher';
 </script>
+
+<ModeWatcher />
 
 
 <div class="flex min-h-screen flex-col pt-24">
@@ -20,4 +24,18 @@
 	</div>
 	
 
-</div>
+</div> -->
+
+
+<script lang="ts">
+	import '../app.pcss';
+	import { ModeWatcher } from 'mode-watcher';
+</script>
+
+<ModeWatcher />
+
+
+<slot/>
+<!-- <div class="flex min-h-screen flex-col pt-24">
+	<slot/>
+</div> -->

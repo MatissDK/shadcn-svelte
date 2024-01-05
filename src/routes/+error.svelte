@@ -1,16 +1,11 @@
-<div class="error-container">
-	<h1 class="error-text">404</h1>
-</div>
+<script lang="ts">
+	import { Button } from "$lib/components/ui/button";
+  </script>
 
-<style>
-	.error-container {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 100vh;
-		margin: 0;
-	}
-	.error-text {
-		font-size: 10rem;
-	}
-</style>
+<div class="flex flex-col items-center justify-center h-screen">
+	<h1 class="text-3xl mb-3">Looking for something? &#x1F50D;</h1>
+	<h3 class="mb-3">We couldn't find page you are looking for!</h3>
+	<a href="/">
+		<Button type="button">Home</Button>
+	</a>
+</div>
