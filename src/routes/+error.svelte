@@ -3,8 +3,8 @@
   </script>
 
 <div class="flex flex-col items-center justify-center h-screen">
-	<h1 class="text-3xl mb-3">Looking for something? &#x1F50D;</h1>
-	<h3 class="mb-3">We couldn't find page you are looking for!</h3>
+	<h1 class="text-2xl mb-4">Looking for something? &#x1F50D;</h1>
+	<p class="text-center text-sm mb-4">We couldn't find page you are looking for!</p>
 	<a href="/">
 		<Button type="button">Home</Button>
 	</a>

@@ -51,8 +51,8 @@
 	<div class="lg:p-8">
 		<div class="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
 			<div class="flex flex-col space-y-2 text-center">
-				<h1 class="text-2xl font-semibold tracking-tight">Create an account</h1>
-				<p class="text-sm text-muted-foreground">Enter your email below to create your account</p>
+				<h1 class="text-2xl font-semibold tracking-tight">Welcome back</h1>
+				<p class="text-sm text-muted-foreground">Sign in to your account</p>
 			</div>
 			<div class={cn('grid gap-6', className)} {...$$restProps}>
 				<form on:submit|preventDefault={onSubmit}>
@@ -69,31 +69,33 @@
 								disabled={isLoading}
 							/>
 						</div>
+						<div class="grid gap-1">
+							<Label class="sr-only" for="password">Password</Label>
+							<Input
+								id="password"
+								placeholder="••••••••"
+								type="password"
+								autocapitalize="none"
+								autocorrect="off"
+								disabled={isLoading}
+							/>
+						</div>
 						<Button disabled={isLoading}>
 							{#if isLoading}
 								<Loader2 class="mr-2 h-4 w-4 animate-spin" />
 							{/if}
-							Sign In with Email
+							Sign In
 						</Button>
 					</div>
 				</form>
-				<div class="relative">
+				<!-- <div class="relative">
 					<div class="absolute inset-0 flex items-center">
 						<span class="w-full border-t" />
 					</div>
 					<div class="relative flex justify-center text-xs uppercase">
 						<span class="bg-background px-2 text-muted-foreground"> Or continue with </span>
 					</div>
-				</div>
-				<Button variant="outline" type="button" disabled={isLoading}>
-					{#if isLoading}
-						<!-- <Icons.spinner class="mr-2 h-4 w-4 animate-spin" /> -->
-					{:else}
-						<!-- <Icons.gitHub class="mr-2 h-4 w-4" /> -->
-					{/if}
-					{' '}
-					GitHub
-				</Button>
+				</div> -->
 			</div>
 			<p class="px-8 text-center text-sm text-muted-foreground">
 				By clicking continue, you agree to our{' '}
